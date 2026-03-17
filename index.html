@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity DashBoard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <h2>Productivity Dashboard</h2>
+        <button id="theme">Change Theme</button>
+      </div>
+      <div class="dashBoard">
+        <div class="date-time">
+          <h4 id="greet">Good Morning, Sir</h4>
+          <h2>
+            <span id="day">Saturday</span>, <span id="time">11:20:44 PM</span>
+          </h2>
+          <h3 id="date">11-05-2026</h3>
+          <h4 id="location">Luncknow, UP</h4>
+        </div>
+        <div class="weather-deatils">
+          <h1>Weather</h1>
+          <div class="max-min">
+            <h3>
+              <span id="temp-text">Temp: </span> <span id="temp">23</span>&deg;C
+            </h3>
+            <h3>
+              <span id="max-temp-text">Max-Temp: </span>
+              <span id="max-temp">30</span>&deg;C
+            </h3>
+            <h3>
+              <span id="feel-like-text">Feels-Like:</span>
+              <span id="feel-like">20</span>&deg;C
+            </h3>
+          </div>
+          <div class="humidity-wind">
+            <h3 id="humidity">Humidity: 30%</h3>
+            <h3 id="wind">Wind: 10km/h</h3>
+          </div>
+        </div>
+      </div>
+      <div class="allFeatuers">
+        <div class="featuer todo" id="0">
+          <h2>To-Do Tasks</h2>
+        </div>
+        <div class="featuer daily-planner" id="1">
+          <h2>Daily Planner</h2>
+        </div>
+        <div class="featuer motivation" id="2">
+          <h2>Motivational Quotes</h2>
+        </div>
+        <div class="featuer pomodoro" id="3">
+          <h2>Pomodoro</h2>
+        </div>
+      </div>
+      <div class="fullpage fullpageTodo">
+        <h2>To-Do Tasks</h2>
+        <button class="back" id="0">Back</button>
+        <div class="taskContainer">
+          <div class="addTask">
+            <form>
+              <input id="taskInput" type="text" placeholder="Enter Task...." />
+              <textarea
+                name=""
+                id="details"
+                placeholder="Enter Details"></textarea>
+              <div class="checkBox">
+                <input type="checkbox" name="" id="check" />
+                <label for="check">Mark as important</label>
+              </div>
+
+              <button id="addTaskBtn">Add Task</button>
+            </form>
+          </div>
+          <div class="allTask"></div>
+        </div>
+      </div>
+      <div class="fullpage fullpageDailyPlanner">
+        <h2>Plan Your Day</h2>
+        <button class="back" id="1">Back</button>
+        <div class="day-planner">
+          <div class="plan-time">
+            <p>5:00-6:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>6:00-7:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>7:00-8:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>8:00-9:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>9:00-10:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>10:00-11:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>11:00-12:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>12:00-1:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>1:00-2:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>2:00-3:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>3:00-4:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>4:00-5:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>5:00-6:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>6:00-7:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>7:00-8:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>8:00-9:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>9:00-10:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>10:00-11:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+          <div class="plan-time">
+            <p>11:00-12:00</p>
+            <input type="text" placeholder="..." />
+          </div>
+        </div>
+      </div>
+      <div class="fullpage fullpageMotivation">
+        <h2>Motivation Quotes</h2>
+        <button class="back" id="2">Back</button>
+        <div class="quotesContainer">
+          <div class="card">
+            <h2>Toady's Motivation</h2>
+            <h1 id="quote">
+              Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet
+              consectetur. consectetur adipisicing elit. Eos?
+            </h1>
+            <h1 id="author">-Marco</h1>
+          </div>
+        </div>
+      </div>
+      <div class="fullpage fullpagePomodoro">
+        <h2>Study with me!</h2>
+        <button class="back" id="3">Back</button>
+        <h3 class="session">Work Session</h3>
+        <div class="promo-timer">
+          <h1>25:00</h1>
+          <div class="pause-start">
+            <button class="start-timer">Start</button>
+            <button class="pause-timer">Pause</button>
+            <button class="reset-timer">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

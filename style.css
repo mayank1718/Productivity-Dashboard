@@ -1,0 +1,674 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --primary1: #f4eeff;
+  --primary2: #40513b;
+  --primary3: #15173d;
+  --secondary1: #dcd6f7;
+  --secondary2: #628141;
+  --secondary3: #982598;
+  --secondaryDark1: #a6b1e1;
+  --secondaryDark2: #e5d9b6;
+  --secondaryDark3: #e491c9;
+  --tri1: #424874;
+  --tri2: #e67e22;
+  --tri3: #f1e9e9;
+  --red: rgb(228, 74, 74);
+  --black: black;
+  --green: rgb(48, 244, 48);
+  --blue: rgb(50, 194, 255);
+}
+@font-face {
+  font-family: "twinkle1";
+  src: url(Twinkle\ Heart.otf);
+}
+@font-face {
+  font-family: "twinkle2";
+  src: url(Twinkle\ Heart.ttf);
+}
+@font-face {
+  font-family: "twinkle3";
+  src: url(Twinkle\ Heart.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "twinkle2";
+}
+
+body {
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  font-family: twinkle1;
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1525490829609-d166ddb58678?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3VufGVufDB8fDB8fHww);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: var(--secondaryDark1);
+  border: 2px solid var(--tri1);
+  background-image: url(https://images.unsplash.com/photo-1773075411023-6a2ff5bc8c4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8SnI2ZkFNdGZjaVV8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.nav h2 {
+  color: var(--tri1);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: twinkle1;
+}
+
+.nav #theme {
+  padding: 5px 20px;
+  background-color: var(--tri1);
+  color: var(--secondary1);
+  font-family: twinkle2;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px var(--primary1);
+  box-shadow: 0 0 10px var(--primary1);
+}
+
+.nav #theme:active {
+  scale: 0.97;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+.dashBoard {
+  width: 100%;
+  height: 250px;
+  background-image: url(https://plus.unsplash.com/premium_photo-1666323594456-cd1b09b2cbf4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border: 2px solid var(--tri1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.dashBoard .date-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+.dashBoard .date-time #greet {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--primary1);
+  margin-bottom: 5px;
+}
+
+.dashBoard .date-time h2 {
+  font-size: 60px;
+  margin-bottom: 3px;
+  color: var(--tri1);
+}
+.dashBoard .date-time #day {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.dashBoard .date-time #date {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--tri1);
+}
+
+.dashBoard .date-time #time {
+  font-weight: 450;
+}
+
+.dashBoard .date-time #location {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--tri1);
+}
+
+.dashBoard .weather-deatils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashBoard .weather-deatils h1 {
+  font-size: 60px;
+  font-weight: 580;
+  color: var(--black);
+}
+
+.dashBoard .weather-deatils h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.dashBoard .weather-deatils .max-min #temp-text {
+  color: var(--red);
+  font-size: 30px;
+}
+
+.dashBoard .weather-deatils .max-min #feel-like-text {
+  color: var(--red);
+  font-size: 30px;
+}
+
+.dashBoard .weather-deatils .max-min #max-temp-text {
+  color: var(--red);
+  font-size: 30px;
+}
+
+.allFeatuers {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.allFeatuers .featuer {
+  width: 230px;
+  background-color: var(--secondaryDark1);
+  height: 280px;
+  border: 2px solid var(--tri1);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 0 30px var(--tri1);
+  box-shadow: 0 0 30px var(--tri1);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  margin-bottom: 10px;
+}
+.allFeatuers .featuer:active {
+  scale: 0.97;
+}
+
+.allFeatuers .featuer h2 {
+  font-size: 30px;
+  color: var(--tri1);
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.allFeatuers .todo {
+  background-image: url(https://plus.unsplash.com/premium_photo-1683309568772-57011d6c1b7b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9kb3xlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.allFeatuers .daily-planner {
+  background-image: url(https://images.unsplash.com/photo-1729192711148-652d64c6ed49?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhaWx5JTIwcGxhbm5lcnxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.allFeatuers .motivation {
+  background-image: url(https://images.unsplash.com/photo-1494959764136-6be9eb3c261e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.allFeatuers .pomodoro {
+  background-image: url(https://images.unsplash.com/photo-1664995037107-29cfd2d11e4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9tb2Rvcm8lMjB0aW1lcnxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.fullpage {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--tri);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 20px 30px;
+  z-index: 10;
+}
+
+.fullpage h2 {
+  font-size: 65px;
+  color: var(--tri1);
+  padding: 30px;
+  position: fixed;
+  top: 2%;
+  left: 3%;
+}
+
+.fullpage .back {
+  height: 50px;
+  background-color: var(--tri1);
+  padding: 15px 35px;
+  margin: 30px;
+  font-size: 25px;
+  font-family: twinkle3;
+  color: var(--secondary1);
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 40px var(--secondary1);
+  box-shadow: 0 0 40px var(--secondary1);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+
+.back:active {
+  scale: 0.97;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+.fullpageTodo {
+  display: none;
+  background-color: var(--secondaryDark1);
+}
+
+.fullpageTodo .taskContainer {
+  height: 75%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.fullpageTodo .taskContainer .addTask {
+  background-color: var(--tri1);
+  width: 35%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--secondary1);
+  padding: 15px 20px;
+}
+.fullpageTodo .taskContainer .addTask form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+}
+.fullpageTodo .taskContainer .addTask form #taskInput {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: var(--secondaryDark1);
+  color: var(--primary1);
+  font-size: 22px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+.fullpageTodo .taskContainer .addTask form #details {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: var(--secondaryDark1);
+  color: var(--primary1);
+  font-size: 22px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  height: 250px;
+}
+.fullpageTodo .taskContainer .addTask form .checkBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--primary1);
+  font-size: 20px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.fullpageTodo .taskContainer .addTask form .checkBox #check {
+  scale: 1.76;
+}
+.fullpageTodo .taskContainer .addTask form #addTaskBtn {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: var(--secondaryDark1);
+  color: var(--primary1);
+  font-size: 22px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.fullpageTodo .taskContainer .allTask {
+  background-color: var(--tri1);
+  width: 63%;
+  height: 100%;
+  padding: 10px 20px;
+  overflow: auto;
+  scrollbar-width: none;
+  border: 2px solid var(--primary1);
+  border-radius: 10px;
+}
+
+.fullpageTodo .taskContainer .allTask .tasks {
+  width: 100%;
+  height: 50px;
+  background-color: var(--secondaryDark1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.fullpageTodo .taskContainer .allTask .tasks h3 {
+  color: var(--tri1);
+  font-size: 30px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.fullpageTodo .taskContainer .allTask .tasks h3.completed {
+  text-decoration: line-through;
+  color: var(--secondary1);
+}
+.tasks h3 #true {
+  opacity: 1;
+}
+.tasks h3 #false {
+  opacity: 0;
+}
+
+.fullpageTodo .taskContainer .allTask .tasks .delete {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--primary1);
+  border: none;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.allTask .tasks button:active {
+  scale: 0.98;
+}
+
+.fullpageTodo .taskContainer .allTask .tasks .complete {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--green);
+  color: var(--primary1);
+  border: none;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+/* fullpage Daily Planner */
+.fullpageDailyPlanner {
+  background-color: var(--secondaryDark1);
+}
+
+.fullpageDailyPlanner .day-planner {
+  margin-top: 130px;
+  background-color: var(--tri1);
+  height: 77%;
+  border: 2px solid var(--secondary1);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  scrollbar-width: none;
+}
+
+.fullpageDailyPlanner .day-planner .plan-time {
+  background-color: var(--secondary1);
+  width: 48%;
+  border: 2px solid var(--secondaryDark1);
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.fullpageDailyPlanner .day-planner .plan-time input {
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+  padding: 10px 15px;
+}
+.fullpageDailyPlanner .day-planner .plan-time p {
+  position: absolute;
+  top: 2%;
+  left: 3%;
+}
+
+.fullpageMotivation {
+  background-color: var(--secondary1);
+}
+
+.fullpageMotivation .quotesContainer {
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 60px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: var(--secondaryDark1);
+  border: 5px solid var(--tri1);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 50px var(--primary1);
+  box-shadow: 0 0 50px var(--primary1);
+}
+
+.fullpageMotivation .quotesContainer .card {
+  height: 300px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: var(--primary1);
+  border: 4px solid var(--secondary1);
+  -webkit-box-shadow: 0 0 50px var(--tri1);
+  box-shadow: 0 0 50px var(--tri1);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.fullpageMotivation .quotesContainer .card h2 {
+  font-size: 50px;
+  text-decoration: underline;
+}
+.fullpageMotivation .quotesContainer .card #quote {
+  position: absolute;
+  top: 35%;
+  font-size: 40px;
+  color: var(--secondaryDark1);
+}
+.fullpageMotivation .quotesContainer .card #author {
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+  color: var(--tri1);
+}
+
+.fullpagePomodoro {
+  background-color: var(--secondaryDark1);
+}
+
+.fullpagePomodoro h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  font-size: 50px;
+  color: var(--primary1);
+  background-color: var(--green);
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+.fullpagePomodoro .promo-timer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.fullpagePomodoro .promo-timer h1 {
+  font-size: 70px;
+  color: var(--tri1);
+}
+
+.fullpagePomodoro .promo-timer .pause-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.fullpagePomodoro .promo-timer .pause-start button {
+  padding: 13px 20px;
+  background-color: var(--secondary1);
+  border: none;
+  border-radius: 10px;
+  color: var(--tri1);
+  font-size: 25px;
+}

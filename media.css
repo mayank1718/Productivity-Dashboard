@@ -1,0 +1,89 @@
+@media (max-width: 650px) and (min-width: 350px) {
+  .dashBoard {
+    height: 300px;
+    padding: 10px;
+  }
+  .dashBoard .date-time #greet {
+    font-size: 25px;
+    margin-bottom: 2px;
+  }
+  .dashBoard .date-time h2{
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+.dashBoard .date-time #date{
+    font-size: 25px;
+}
+.dashBoard .date-time #time{
+    font-weight: 450;
+    font-size: 30px;
+}
+.fullpage h2{
+  font-size: 40px;
+  padding: 10px;
+}
+.fullpage .back{
+  font-size: 25px;
+  margin: 5px;
+  height: 40px;
+}
+.fullpageTodo {
+  overflow: auto;
+  height: 100%;
+  padding: 20px;
+}
+.fullpageTodo .taskContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 80%;
+  overflow: auto;
+}
+.fullpage .taskContainer .addTask{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fullpageTodo .taskContainer .allTask{
+  width: 100%;
+}
+.fullpageTodo .taskContainer .addTask form #taskInput {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.fullpageTodo .taskContainer .addTask form #details {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  height: 150px;
+}
+.fullpageTodo .taskContainer .addTask form .checkBox {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.fullpageTodo .taskContainer .addTask form .checkBox #check {
+  scale: 1.5;
+}
+.fullpageTodo .taskContainer .addTask form #addTaskBtn {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.fullpageTodo .taskContainer .allTask h1 {
+  font-size: 25px;
+}
+.fullpageTodo .taskContainer .allTask .tasks {
+  height: 40px;
+  font-size: 16px;
+}
+.fullpageDailyPlanner .day-planner{
+  display: flex;  
+  margin-top: 100px;
+}
+.fullpageDailyPlanner .day-planner .plan-time {
+  width: 100%;
+}
+}
+
