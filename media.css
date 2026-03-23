@@ -18,6 +18,18 @@
     font-weight: 450;
     font-size: 30px;
 }
+.allFeatuers{
+  width: 100%;
+}
+.allFeatuers .featuer{
+  width: 100%;
+}
+
+.allFeatuers .featuer h2{
+  font-size: 3rem;
+  color: var(--tri1);
+}
+
 .fullpage h2{
   font-size: 40px;
   padding: 10px;
@@ -40,10 +52,11 @@
   margin-top: 10px;
   height: 80%;
   overflow: auto;
+  margin-top: 8rem;
 }
 .fullpage .taskContainer .addTask{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .fullpageTodo .taskContainer .allTask{
   width: 100%;
